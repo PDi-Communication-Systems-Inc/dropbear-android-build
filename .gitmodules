@@ -1,4 +1,4 @@
 [submodule "dropbear"]
 	path = dropbear
-	url = git@github.com:NHellFire/dropbear-android
+	url = https://github.com/carlonluca/dropbear.git
 	branch = android

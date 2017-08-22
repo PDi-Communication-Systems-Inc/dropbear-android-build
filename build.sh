@@ -3,7 +3,7 @@ set -e
 arch="$1"
 case "$arch" in
 	arm)
-		HOST=arm-linux-gnueabihf
+		HOST=arm-linux-androideabi
 		;;
 	arm64)
 		HOST=aarch64-linux-gnu
@@ -52,6 +52,9 @@ autoheader
  --sysconfdir=/data/dropbear
 
 echo
+
+echo ">>>> copying in new config.h"
+cp ../config.h config.h
 
 echo ">>>> building for $arch"
 make strip STATIC=1 MULTI=1 SCPPROGRESS=0 PROGRAMS="dropbear dropbearkey scp dbclient"
