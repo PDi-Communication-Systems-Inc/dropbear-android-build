@@ -3,7 +3,7 @@
 ## Compiling
 1. Download source
     ```shell
-    git clone --recursive https://github.com/NHellFire/dropbear-android-build.git
+    git clone --recursive https://github.com/carlonluca/dropbear-android-build.git
     ```
 
 2. Edit the HOST variables in build.sh to match your environment if required  
