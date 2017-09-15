@@ -53,7 +53,7 @@ autoheader
 
 echo
 
-echo ">>>> copying in new config.h"
+echo ">>>> overwriting config.h with ours"
 cp ../config.h config.h
 
 echo ">>>> building for $arch"
